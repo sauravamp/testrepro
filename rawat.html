@@ -1,0 +1,291 @@
+
+    Git
+    ====
+    
+Saurav@LAPTOP-2G62BSNV MINGW64 ~/Desktop
+$ git --version
+git version 2.40.0.windows.1
+
+Saurav@LAPTOP-2G62BSNV MINGW64 ~/Desktop
+$ git config --global user.name "Saurav Rawat"
+
+Saurav@LAPTOP-2G62BSNV MINGW64 ~/Desktop
+$ git config --global user.name
+Saurav Rawat
+
+Saurav@LAPTOP-2G62BSNV MINGW64 ~/Desktop
+$ git config --global user.email "sauravcool90@gmail.com"
+
+Saurav@LAPTOP-2G62BSNV MINGW64 ~/Desktop
+$ git config --global user.email
+sauravcool90@gmail.com
+
+Saurav@LAPTOP-2G62BSNV MINGW64 ~/Desktop
+$ cd desktop
+bash: cd: desktop: No such file or directory
+
+Saurav@LAPTOP-2G62BSNV MINGW64 ~/Desktop
+$ mkdir project
+mkdir: cannot create directory ‘project’: File exists
+
+Saurav@LAPTOP-2G62BSNV MINGW64 ~/Desktop
+$ mkdir gitpro
+
+Saurav@LAPTOP-2G62BSNV MINGW64 ~/Desktop
+$ cd gitpro
+
+Saurav@LAPTOP-2G62BSNV MINGW64 ~/Desktop/gitpro
+$ git init
+Initialized empty Git repository in C:/Users/Saurav/Desktop/gitpro/.git/
+
+Saurav@LAPTOP-2G62BSNV MINGW64 ~/Desktop/gitpro (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+        script.html
+        style.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Saurav@LAPTOP-2G62BSNV MINGW64 ~/Desktop/gitpro (master)
+$
+
+Saurav@LAPTOP-2G62BSNV MINGW64 ~/Desktop/gitpro (master)
+$
+
+Saurav@LAPTOP-2G62BSNV MINGW64 ~/Desktop/gitpro (master)
+$
+
+Saurav@LAPTOP-2G62BSNV MINGW64 ~/Desktop/gitpro (master)
+$
+
+Saurav@LAPTOP-2G62BSNV MINGW64 ~/Desktop/gitpro (master)
+$
+
+Saurav@LAPTOP-2G62BSNV MINGW64 ~/Desktop/gitpro (master)
+$
+
+Saurav@LAPTOP-2G62BSNV MINGW64 ~/Desktop/gitpro (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/Saurav/Desktop/gitpro/.git/
+
+Saurav@LAPTOP-2G62BSNV MINGW64 ~/Desktop/gitpro (master)
+$ git add index.html
+
+Saurav@LAPTOP-2G62BSNV MINGW64 ~/Desktop/gitpro (master)
+$ git add script.html
+
+Saurav@LAPTOP-2G62BSNV MINGW64 ~/Desktop/gitpro (master)
+$ git add style.html
+
+Saurav@LAPTOP-2G62BSNV MINGW64 ~/Desktop/gitpro (master)
+$ git commit -m "kuch nhi hua done"
+[master (root-commit) bfe58ce] kuch nhi hua done
+ 3 files changed, 54 insertions(+)
+ create mode 100644 index.html
+ create mode 100644 script.html
+ create mode 100644 style.html
+
+Saurav@LAPTOP-2G62BSNV MINGW64 ~/Desktop/gitpro (master)
+$ git log
+commit bfe58ceca37e1f9a9210113063e4fb786312c7f1 (HEAD -> master)
+Author: Saurav Rawat <sauravcool90@gmail.com>
+Date:   Wed Mar 29 11:43:49 2023 +0530
+
+    kuch nhi hua done
+
+Saurav@LAPTOP-2G62BSNV MINGW64 ~/Desktop/gitpro (master)
+$
+
+Saurav@LAPTOP-2G62BSNV MINGW64 ~/Desktop/gitpro (master)
+$ git branch teamhead
+
+Saurav@LAPTOP-2G62BSNV MINGW64 ~/Desktop/gitpro (master)
+$ git branch "teamhead"
+fatal: a branch named 'teamhead' already exists
+
+Saurav@LAPTOP-2G62BSNV MINGW64 ~/Desktop/gitpro (master)
+$ git checkout teamhead
+Switched to branch 'teamhead'
+
+Saurav@LAPTOP-2G62BSNV MINGW64 ~/Desktop/gitpro (teamhead)
+$ git.status
+bash: git.status: command not found
+
+Saurav@LAPTOP-2G62BSNV MINGW64 ~/Desktop/gitpro (teamhead)
+$ git status
+On branch teamhead
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        branch.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Saurav@LAPTOP-2G62BSNV MINGW64 ~/Desktop/gitpro (teamhead)
+$ git add branch.html
+
+Saurav@LAPTOP-2G62BSNV MINGW64 ~/Desktop/gitpro (teamhead)
+$ git commit -m "adding branch.html"
+[teamhead baa7bbb] adding branch.html
+ 1 file changed, 12 insertions(+)
+ create mode 100644 branch.html
+
+Saurav@LAPTOP-2G62BSNV MINGW64 ~/Desktop/gitpro (teamhead)
+$ git log
+commit baa7bbb4ca13e93e06aeac149e66f86255930d30 (HEAD -> teamhead)
+Author: Saurav Rawat <sauravcool90@gmail.com>
+Date:   Wed Mar 29 12:12:41 2023 +0530
+
+    adding branch.html
+
+commit bfe58ceca37e1f9a9210113063e4fb786312c7f1 (master)
+Author: Saurav Rawat <sauravcool90@gmail.com>
+Date:   Wed Mar 29 11:43:49 2023 +0530
+
+    kuch nhi hua done
+
+Saurav@LAPTOP-2G62BSNV MINGW64 ~/Desktop/gitpro (teamhead)
+$ git branch teamlead
+
+Saurav@LAPTOP-2G62BSNV MINGW64 ~/Desktop/gitpro (teamhead)
+$ git.status
+bash: git.status: command not found
+
+Saurav@LAPTOP-2G62BSNV MINGW64 ~/Desktop/gitpro (teamhead)
+$ git add saurav.html
+
+Saurav@LAPTOP-2G62BSNV MINGW64 ~/Desktop/gitpro (teamhead)
+$ git add rawat.html
+
+Saurav@LAPTOP-2G62BSNV MINGW64 ~/Desktop/gitpro (teamhead)
+$ git commit -m "adding two mode html files"
+[teamhead 02640ca] adding two mode html files
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 rawat.html
+ create mode 100644 saurav.html
+
+Saurav@LAPTOP-2G62BSNV MINGW64 ~/Desktop/gitpro (teamhead)
+$ git log
+commit 02640caec599b5cd41b776abcafb38ff69e8e0d0 (HEAD -> teamhead)
+Author: Saurav Rawat <sauravcool90@gmail.com>
+Date:   Wed Mar 29 12:21:12 2023 +0530
+
+    adding two mode html files
+
+commit baa7bbb4ca13e93e06aeac149e66f86255930d30 (teamlead)
+Author: Saurav Rawat <sauravcool90@gmail.com>
+Date:   Wed Mar 29 12:12:41 2023 +0530
+
+    adding branch.html
+
+commit bfe58ceca37e1f9a9210113063e4fb786312c7f1 (master)
+Author: Saurav Rawat <sauravcool90@gmail.com>
+Date:   Wed Mar 29 11:43:49 2023 +0530
+
+    kuch nhi hua done
+
+Saurav@LAPTOP-2G62BSNV MINGW64 ~/Desktop/gitpro (teamhead)
+$ git checkout team2
+error: pathspec 'team2' did not match any file(s) known to git
+
+Saurav@LAPTOP-2G62BSNV MINGW64 ~/Desktop/gitpro (teamhead)
+$ git branch team2
+
+Saurav@LAPTOP-2G62BSNV MINGW64 ~/Desktop/gitpro (teamhead)
+$ git checkout team2
+Switched to branch 'team2'
+
+Saurav@LAPTOP-2G62BSNV MINGW64 ~/Desktop/gitpro (team2)
+$ git add saur.html
+
+Saurav@LAPTOP-2G62BSNV MINGW64 ~/Desktop/gitpro (team2)
+$ git log
+commit 02640caec599b5cd41b776abcafb38ff69e8e0d0 (HEAD -> team2, teamhead)
+Author: Saurav Rawat <sauravcool90@gmail.com>
+Date:   Wed Mar 29 12:21:12 2023 +0530
+
+    adding two mode html files
+
+commit baa7bbb4ca13e93e06aeac149e66f86255930d30 (teamlead)
+Author: Saurav Rawat <sauravcool90@gmail.com>
+Date:   Wed Mar 29 12:12:41 2023 +0530
+
+    adding branch.html
+
+commit bfe58ceca37e1f9a9210113063e4fb786312c7f1 (master)
+Author: Saurav Rawat <sauravcool90@gmail.com>
+Date:   Wed Mar 29 11:43:49 2023 +0530
+
+    kuch nhi hua done
+
+Saurav@LAPTOP-2G62BSNV MINGW64 ~/Desktop/gitpro (team2)
+$ git branch thirdbranch
+
+Saurav@LAPTOP-2G62BSNV MINGW64 ~/Desktop/gitpro (team2)
+$ git checkout thirdbranch
+Switched to branch 'thirdbranch'
+A       saur.html
+
+Saurav@LAPTOP-2G62BSNV MINGW64 ~/Desktop/gitpro (thirdbranch)
+$ git add saury.html
+
+Saurav@LAPTOP-2G62BSNV MINGW64 ~/Desktop/gitpro (thirdbranch)
+$ git log
+commit 02640caec599b5cd41b776abcafb38ff69e8e0d0 (HEAD -> thirdbranch, teamhead, team2)
+Author: Saurav Rawat <sauravcool90@gmail.com>
+Date:   Wed Mar 29 12:21:12 2023 +0530
+
+    adding two mode html files
+
+commit baa7bbb4ca13e93e06aeac149e66f86255930d30 (teamlead)
+Author: Saurav Rawat <sauravcool90@gmail.com>
+Date:   Wed Mar 29 12:12:41 2023 +0530
+
+    adding branch.html
+
+commit bfe58ceca37e1f9a9210113063e4fb786312c7f1 (master)
+Author: Saurav Rawat <sauravcool90@gmail.com>
+Date:   Wed Mar 29 11:43:49 2023 +0530
+
+    kuch nhi hua done
+
+Saurav@LAPTOP-2G62BSNV MINGW64 ~/Desktop/gitpro (thirdbranch)
+$ git checkout team2
+Switched to branch 'team2'
+A       saur.html
+A       saury.html
+
+Saurav@LAPTOP-2G62BSNV MINGW64 ~/Desktop/gitpro (team2)
+$ git merge thirdbranch
+Already up to date.
+
+Saurav@LAPTOP-2G62BSNV MINGW64 ~/Desktop/gitpro (team2)
+$ git log
+commit 02640caec599b5cd41b776abcafb38ff69e8e0d0 (HEAD -> team2, thirdbranch, teamhead)
+Author: Saurav Rawat <sauravcool90@gmail.com>
+Date:   Wed Mar 29 12:21:12 2023 +0530
+
+    adding two mode html files
+
+commit baa7bbb4ca13e93e06aeac149e66f86255930d30 (teamlead)
+Author: Saurav Rawat <sauravcool90@gmail.com>
+Date:   Wed Mar 29 12:12:41 2023 +0530
+
+    adding branch.html
+
+commit bfe58ceca37e1f9a9210113063e4fb786312c7f1 (master)
+Author: Saurav Rawat <sauravcool90@gmail.com>
+Date:   Wed Mar 29 11:43:49 2023 +0530
+
+    kuch nhi hua done
+
+Saurav@LAPTOP-2G62BSNV MINGW64 ~/Desktop/gitpro (team2)
+$
+
+Saurav@LAPTOP-2G62BSNV MINGW64 ~/Desktop/gitpro (team2)
+
